@@ -11,12 +11,12 @@ db = SQLAlchemy(app)
 
 
 class EmailForm(FlaskForm):
-	first_name = StringField('Last Name',
+	first_name = StringField('First Name',
 		validators=[
 			DataRequired(),
 			Length(min=1, max=100)
 		])
-	last_name = StringField('First Name',
+	last_name = StringField('Last Name',
 		validators=[
 			DataRequired(),
 			Length(min=1, max=100)
