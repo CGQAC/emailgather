@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body_content %}
+
+	<h1>Emails</h1>
+	{% for email in emails %}
+		<div>
+			<span>{{ email.first_name }} {{ email.last_name }}</i></span>
+			<span>{{ email.email }}</span>
+		</div>
+	{% endfor %}
+
+{% endblock body_content %}
